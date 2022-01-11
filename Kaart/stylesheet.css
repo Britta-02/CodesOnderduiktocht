@@ -1,0 +1,80 @@
+html{
+  font-size: 14px;
+}
+
+body{
+    margin: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.map-image{
+  background-image: url('Map.png');
+  background-color: black;
+/*  height: 220vh;
+  width: 350vh;     */ 
+  height: 230vh;
+  width: 370vh;
+  background-position: left top;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+
+}
+
+
+
+.button{
+  color: white;
+  background-color: rgb(0, 0, 0, 0.8);
+  position: fixed;
+  transform: translate(2vh, 2vh);
+  border-radius: 15px;
+  border: none;
+  cursor: pointer;
+}
+
+.button-place{
+  color: black;
+  text-shadow: 1px 1px 3px white;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+
+.Montuosa{
+  position: absolute;
+  transform: translate(140vh, 24vh);
+}
+
+.Mirovan{
+  position: absolute;
+  transform: translate(276vh, 89vh);
+}
+
+.Sehrli{
+  position: absolute;
+  transform: translate(184vh, 164vh);
+}
+
+.Montmure{
+  position: absolute;
+  transform: translate(72vh, 139vh);
+}
+
+.Concordia{
+  position: absolute;
+  transform: translate(140vh, 93vh);
+}
+
+
+/*
+  height: 200vh;
+
+background-image: url('Map.png');
+    background-color: lightblue;
+    background-position: top;
+    background-attachment: scroll;
+    background-repeat: no-repeat;
+    background-size: 180vh;
+*/
