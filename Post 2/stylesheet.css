@@ -1,0 +1,75 @@
+html{
+font-size: 12px;
+}
+
+img{
+    width: 100%;
+}
+
+body{
+    width: 100%;
+    height: 100vh;        
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: blue;
+    padding: 0 1rem;     /* afstand tot rand van body. kan dus heen en weer in scherm.*/         
+}
+
+
+.blog-post{
+width: 50%;
+max-width: 98rem;       /* wann. boven de 10%, niks veranderd. Wann. eronder wordt hij leiner*/
+height: 5rem;          /* hoogte post, weghalen is hoogte body is hoogte scherm*/ 
+padding: 0rem;
+background-color: chartreuse;
+box-shadow: 0 1.4rem 8rem rgba(0, 0, 0, 2);
+display: flex;
+align-items: center;
+border-radius: .8rem;       /* afronding v/d hoeken */
+}
+
+.blog-post__img{
+min-width: 15rem;
+max-width: 15rem;
+height: 15rem;
+transform: 30rem;
+transform: translate(-2rem, .8rem); /*zoveel staat afbeelding naar rechts vanaf basic punt op x-as*/
+position: relative;
+} 
+
+.blog-post__img img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    border-radius: .8rem;
+}
+
+.blog-post__data span{
+    display: flex;
+    /*     justify-content: right;*/
+    justify-content: right;
+    color: rgb(0, 0, 0, .5);        /* laatste getal is probably hoe doorzichtig het is*/
+    font-size: 1.2rem;
+    /* margin: .5rem 25rem; */
+    /*transform: translateX(23rem); */
+    transform: translate(22rem, 2rem);
+}
+
+
+.blog-post__title{
+    font-size: 1.7rem;
+    margin: 1rem -4rem;         /* hoogte, ?, laagte,*/
+    text-transform: uppercase;    /* maakt overal hoofdletters van */
+    transform: translate(1rem, -1.3rem);
+    color: rgb(0, 0, 0);
+    font-weight: bolder;
+}
+
+/*.blog-post__text{
+    margin-bottom: 0rem;
+    font-size: 1.2rem;
+    color: rosybrown;
+}
+*/
