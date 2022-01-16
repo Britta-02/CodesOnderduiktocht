@@ -2,70 +2,106 @@ html{
     margin: 0;
     height: 100%;
     font-size: 14px;
+    background-color:#568365;
 }
-
 body{
     margin: 0;
+
 }
 
-
-/*img{
-    position: relative;
-    width: 100%;
-    height: auto;
-    object-fit: cover;
-    object-position: bottom;
-
-    overflow
-}*/
-
-
-
-      
+/* container met achtergrond*/      
 .container {
-    position: relative;
-    height: 100%;           /*weghalen geeft witte rand, laten staan zorgt dat onderduikkaart van plaats veranderd wann. scherm groter of kleiner maken*/
-    border: 0px;
-    margin: 0px;
-    padding: 0px;
+    width: 90vw;
+    height: 50.625vw;
+    background-color: white;
+    left: 50%;
+    top: 50%;
+    margin-left: -45vw;
+    margin-top: -25.3125vw;
+    position: absolute;
+    -webkit-box-shadow: 0px 0px 22px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 0px 22px 0px rgba(0,0,0,0.75);
+    box-shadow: 0px 0px 22px 0px rgba(0,0,0,0.75);
+    overflow: hidden;
+    display: none;
 }
   
 .background{
-    max-width: 100%;
-    height: 100%;
-
+        height: 100%;
+        width: 100%;
 }
 
- .kaartenteller{
-     width: 7%;
+/* kaartenteller*/
+.kaartenteller{
+     width: 8%;
      height: auto;
-     position: fixed;
+     position: absolute;
      top: 6%;
      right: 6%;
- }
+}
 
- 
-  
-  .container .btn {
+/* onderduikkaarten*/
+.container .btn {
     position: absolute;
-    top: 96%;
-    left: 7%;
-    transform: translate(-50%, -50%);
-    /*-ms-transform: translate(-50%, -50%); Voor soort browser?*/
-    background-color: red;
-    color: red;                 /* tekst kleur*/
+    color: red;                 
     padding: 0.5% 1%;
     border: none;
     cursor: pointer;
     border-radius: 5px;
-    
-  }
-  
-  .container .btn:hover {
+}
+ 
+.container .btn:hover {
     background-color: black;
-  }
+}
 
+.container .btn1{
+    background-color: blue;
+    top: 96%;
+    left: 7%;
+    transform: translate(-50%, -50%);
+}
 
+.container .btn2{
+    background-color: rgb(0, 255, 55);
+    top: 92%;
+    left: 76%;
+    transform: translate(-50%, -50%);
+    padding: 0.4% 0.8%;
+}
 
+/* tekst blok met afbeelding*/
+.a{
+    position: absolute; 
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: 65%;
+    width: 50%;
+    display:table;
+}
+.b{
+    padding: 18%;
+    text-align: center; 
+    display:table-cell;
+    height: 56px;
+    vertical-align: middle;
+    background-image: linear-gradient(rgb(202, 176, 138, 0.5), rgb(244, 213, 166, 0.5));
+}
 
-  
+.personen{
+    position: absolute; 
+    top: 50%;
+    left: 18%;
+    transform: translate(-50%, -50%);
+    width: 30%;
+}
+
+.logo{
+    position: absolute;
+    top: 2%;
+    left: 2%;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+
